@@ -1,0 +1,55 @@
+{
+  "name": "@promopilot/utm-builder",
+  "version": "1.0.0",
+  "description": "Build and validate UTM-tagged URLs from the command line: consistent lowercase values, batch tagging from a file, and checks for missing source/medium/campaign, uppercase keys, duplicates, spaces and mediums GA4 cannot classify. Zero-dependency Node.js CLI, library and GitHub Action. Free online version by PromoPilot.",
+  "keywords": [
+    "utm",
+    "utm-builder",
+    "utm-parameters",
+    "campaign-url-builder",
+    "google-analytics",
+    "ga4",
+    "marketing-analytics",
+    "link-tracking",
+    "digital-marketing",
+    "email-marketing",
+    "cli",
+    "nodejs",
+    "github-action",
+    "promopilot"
+  ],
+  "homepage": "https://promopilot.link/en/tools/utm-builder.php?utm_source=github&utm_medium=repo&utm_campaign=tools&utm_content=utm-builder",
+  "bugs": {
+    "url": "https://github.com/ksanyok/utm-builder/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ksanyok/utm-builder.git"
+  },
+  "license": "MIT",
+  "author": "Alexandr Krikun (https://github.com/ksanyok)",
+  "type": "module",
+  "main": "./src/index.js",
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "bin": {
+    "utm-builder": "bin/cli.js"
+  },
+  "files": [
+    "src",
+    "bin",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node --test"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

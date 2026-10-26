@@ -1,0 +1,16 @@
+name: "UTM Builder by PromoPilot"
+description: "Validate UTM-tagged links so campaign traffic is attributed correctly in analytics."
+author: "Alexandr Krikun"
+branding:
+  icon: "link"
+  color: "purple"
+inputs:
+  args:
+    description: "Arguments passed to the utm-builder CLI, e.g. \"https://example.com --source newsletter --medium email --campaign spring_sale\""
+    required: true
+runs:
+  using: composite
+  steps:
+    - name: Run utm-builder
+      shell: bash
+      run: node "$GITHUB_ACTION_PATH/bin/cli.js" ${{ inputs.args }}
