@@ -92,7 +92,7 @@ Options:
   --strict           Exit with code 1 on warnings too (with --check)
   -h, --help         Show this help
 
-Online version (no install): https://promopilot.link/en/tools/utm-builder.php
+Online version (no install): https://promopilot.link/en/tools/utm-builder.php?utm_source=github&utm_medium=cli&utm_campaign=tools&utm_content=utm-builder
 ```
 
 ## Use as a library
